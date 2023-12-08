@@ -6,10 +6,16 @@
  */
 
 .wp-block-create-block-newspaper-block {
-  background-color: #21759b;
-  color: #fff;
-  padding: 2px;
-  column-width: 250px;
-  column-gap: 5.5rem;
-  column-rule: 4px dotted red;
+  box-sizing: border-box;
+  column-fill: balance;
+
+  &.is-style-drop-cap {
+    p:first-of-type:first-letter {
+      color: #b8b8b8;
+      float: left;
+      font-size: 3.8rem;
+      line-height: 3.5rem;
+      padding-right: 0.33rem;
+    }
+  }
 }
