@@ -42,6 +42,7 @@
     },
     "viewportWidth": 720
   },
+  "parent": ["core/post-content"],
   "supports": {
     "html": false,
     "color": {},
