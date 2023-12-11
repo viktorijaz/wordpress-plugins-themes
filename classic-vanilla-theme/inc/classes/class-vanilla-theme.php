@@ -17,6 +17,8 @@ class VANILLA_THEME {
 		// load class.
 		Assets::get_instance();
 		Menus::get_instance();
+		Meta_Boxes::get_instance();
+
 		$this->set_hooks();
 	}
 
