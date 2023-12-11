@@ -2,7 +2,7 @@
 /**
  * Header template.
  *
- * @package Aquila
+ * @package Vanilla
  */
 ?>
 <!doctype html>
