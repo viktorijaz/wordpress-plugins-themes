@@ -2,7 +2,7 @@
 /**
  * Autoloader file for theme.
  *
- * @package Aquila
+ * @package Vanilla
  */
 
 namespace VANILLA_THEME\Inc\Helpers;
@@ -31,6 +31,8 @@ function autoloader( $resource = '' ) {
 		'\\',
 		str_replace( '_', '-', strtolower( $resource ) )
 	);
+
+	
 
 	/**
 	 * Time to determine which type of resource path it is,

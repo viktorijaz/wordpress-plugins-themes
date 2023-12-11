@@ -2,7 +2,7 @@
 /**
  * Theme Functions.
  *
- * @package Aquila
+ * @package Vanilla
  */
 
  if ( ! function_exists('write_log')) {
@@ -25,6 +25,7 @@ if ( ! defined( 'VANILLA_DIR_URI' ) ) {
 }
 
 require_once VANILLA_DIR_PATH . '/inc/helpers/autoloader.php';
+require_once  VANILLA_DIR_PATH  . '/inc/helpers/template-tags.php';
 
 function vanilla_get_theme_instance() {
 	\VANILLA_THEME\Inc\VANILLA_THEME::get_instance();
@@ -54,3 +55,4 @@ function vanilla_enqueue_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'vanilla_enqueue_scripts' );
+

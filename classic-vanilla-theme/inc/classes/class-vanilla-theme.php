@@ -2,7 +2,7 @@
 /**
  * Bootstraps the Theme.
  *
- * @package Aquila
+ * @package Vanilla
  */
 
 namespace VANILLA_THEME\Inc;
@@ -16,6 +16,7 @@ class VANILLA_THEME {
 
 		// load class.
 		Assets::get_instance();
+		Menus::get_instance();
 		$this->set_hooks();
 	}
 
@@ -83,6 +84,12 @@ class VANILLA_THEME {
 		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		 */
 		add_theme_support( 'post-thumbnails' );
+
+		/**
+		 * Register image sizes.
+		 */
+		add_image_size( 'featured-thumbnail', 350, 233, true );
+
 
 
 		// Add theme support for selective refresh for widgets.
