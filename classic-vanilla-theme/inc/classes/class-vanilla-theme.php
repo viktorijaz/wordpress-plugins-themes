@@ -148,7 +148,7 @@ class VANILLA_THEME {
 		 * @see Theme Styles.
 		 * @link https://make.wordpress.org/core/2018/06/05/whats-new-in-gutenberg-5th-june/, https://developer.wordpress.org/block-editor/developers/themes/theme-support/#default-block-styles
 		 */
-		add_theme_support( 'wp-block-styles' );
+		//add_theme_support( 'wp-block-styles' );
 
 		/**
 		 * Some blocks such as the image block have the possibility to define

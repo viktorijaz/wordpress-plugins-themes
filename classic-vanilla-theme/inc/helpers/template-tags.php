@@ -2,7 +2,7 @@
 /**
  * Custom template tags for the theme.
  *
- * @package Vanilla
+ * @package Aquila
  */
 
 /**
@@ -48,7 +48,6 @@ function get_the_post_custom_thumbnail( $post_id, $size = 'featured-thumbnail', 
  * @param array  $additional_attributes Additional attributes.
  */
 function the_post_custom_thumbnail( $post_id, $size = 'featured-thumbnail', $additional_attributes = [] ) {
-    print("Entered");
 	echo get_the_post_custom_thumbnail( $post_id, $size, $additional_attributes );
 }
 
@@ -131,7 +130,7 @@ function vanilla_the_excerpt( $trim_character_count = 0 ) {
 function vanilla_excerpt_more( $more = '' ) {
 
 	if ( ! is_single() ) {
-		$more = sprintf( '<button class="mt-3 btn btn-info"><a class="aquila-read-more text-white" href="%1$s">%2$s</a></button>',
+		$more = sprintf( '<a class="aquila-read-more text-white" href="%1$s"><button class="mt-3 btn btn-info">%2$s</button></a>',
 			get_permalink( get_the_ID() ),
 			__( 'Read more', 'aquila' )
 		);
@@ -141,7 +140,7 @@ function vanilla_excerpt_more( $more = '' ) {
 }
 
 /**
- * Vanilla Pagination.
+ * Aquila Pagination.
  *
  * @return void
  */
