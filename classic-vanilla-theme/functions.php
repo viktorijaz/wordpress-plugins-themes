@@ -24,6 +24,31 @@ if ( ! defined( 'VANILLA_DIR_URI' ) ) {
 	define( 'VANILLA_DIR_URI', untrailingslashit( get_template_directory_uri() ) );
 }
 
+if ( ! defined( 'VANILLA_BUILD_URI' ) ) {
+	define( 'VANILLA_BUILD_URI', untrailingslashit( get_template_directory_uri() ) . '/assets/build' );
+}
+
+if ( ! defined( 'VANILLA_BUILD_JS_URI' ) ) {
+	define( 'VANILLA_BUILD_JS_URI', untrailingslashit( get_template_directory_uri() ) . '/assets/build/js' );
+}
+
+if ( ! defined( 'VANILLA_BUILD_JS_DIR_PATH' ) ) {
+	define( 'VANILLA_BUILD_JS_DIR_PATH', untrailingslashit( get_template_directory() ) . '/assets/build/js' );
+}
+
+if ( ! defined( 'VANILLA_BUILD_IMG_URI' ) ) {
+	define( 'VANILLA_BUILD_IMG_URI', untrailingslashit( get_template_directory_uri() ) . '/assets/build/src/img' );
+}
+
+if ( ! defined( 'VANILLA_BUILD_CSS_URI' ) ) {
+	define( 'VANILLA_BUILD_CSS_URI', untrailingslashit( get_template_directory_uri() ) . '/assets/build/css' );
+}
+
+if ( ! defined( 'VANILLA_BUILD_CSS_DIR_PATH' ) ) {
+	define( 'VANILLA_BUILD_CSS_DIR_PATH', untrailingslashit( get_template_directory() ) . '/assets/build/css' );
+}
+
+
 require_once VANILLA_DIR_PATH . '/inc/helpers/autoloader.php';
 require_once  VANILLA_DIR_PATH  . '/inc/helpers/template-tags.php';
 
