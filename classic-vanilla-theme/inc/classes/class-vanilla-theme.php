@@ -18,6 +18,8 @@ class VANILLA_THEME {
 		Assets::get_instance();
 		Menus::get_instance();
 		Meta_Boxes::get_instance();
+		Sidebars::get_instance();
+
 
 		$this->set_hooks();
 	}
@@ -25,6 +27,7 @@ class VANILLA_THEME {
 	protected function set_hooks() {
 		// actions and filters
 		add_action( 'after_setup_theme', [ $this, 'setup_theme' ] );
+		
 
 	}
 
