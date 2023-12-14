@@ -28,6 +28,9 @@ if ( ! defined( 'VANILLA_BUILD_URI' ) ) {
 	define( 'VANILLA_BUILD_URI', untrailingslashit( get_template_directory_uri() ) . '/assets/build' );
 }
 
+if ( ! defined( 'VANILLA_BUILD_PATH' ) ) {
+	define( 'VANILLA_BUILD_PATH', untrailingslashit( get_template_directory() ) . '/assets/build' );
+}
 
 if ( ! defined( 'VANILLA_BUILD_JS_URI' ) ) {
 	define( 'VANILLA_BUILD_JS_URI', untrailingslashit( get_template_directory_uri() ) . '/assets/build/js' );
